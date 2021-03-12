@@ -6,6 +6,7 @@ $(function() {
     // the stop watch starts off and if you click the start/stop button it turns it starts or stops
     let isRunning = false;
     let $startStop = $(`#startStop`);
+    let $reset = $(`Reset`);
     $startStop.on(`click`, function() {
         if (isRunning == false) {
             isRunning = true;
@@ -17,7 +18,6 @@ $(function() {
             stopWatch();
             $startStop.html(`START`)
             $startStop.css("background-color", "red")
-
         }
     })
 
